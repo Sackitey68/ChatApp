@@ -39,6 +39,7 @@
   border-radius: 15px;
 }
 
+
 /* Responsiveness of page layout */
 @media screen and (max-width: 950px) {
   .main-container {
@@ -70,6 +71,40 @@
     .chat-profile, .chat-online, .chat-box {
         box-shadow: 3px 3px 10px grey;
     }
+}
+
+/* User profile */
+.user-profile {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.user-img img {
+    inline-size: 150px;
+    block-size: 150px;
+    border-radius: 50%;
+    border: 5px solid darkgray;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: "";
+    inline-size: 15px;
+    block-size: 15px;
+    background-color: limegreen;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    right: 25px;
+    border: 2px solid #fff;
 }
 
 /* Footer */
