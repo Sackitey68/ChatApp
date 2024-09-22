@@ -1,4 +1,83 @@
+:root {
+    --icon-background: linear-gradient(45deg, tomato, purple);
+    --chat-background-1: linear-gradient(45deg, #ee087f, #515bd4);
+    --chat-background-2: linear-gradient( royalblue, grey);
+}
+
+
+
 * {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main layout of the site */
+.main-container {
+  display: grid;
+  grid-template-columns: 25% 25% 48%;
+  justify-content: center;
+  gap: 10px;
+  background-color: hwb(0 100% 20%);
+  padding: 20px;;
+}
+
+.chat-profile {
+  background-color: #fff;
+  height: 100vh;
+  border-radius: 15px;
+}
+
+.chat-online {
+  background-color: #fff;
+  height: 100vh;
+  border-radius: 15px;
+}
+
+.chat-box {
+  background-color: #fff;
+  height: 100vh;
+  border-radius: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 15px;
+}
+
+.footer p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.foot-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer i {
+  font-style: 15px;
+  color: #4d4a4a;
+}
+
+.to-top {
+  margin-left: 15px;
+}
+
+.foot-container .to-top-icon {
+  background-color: darkgray;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
 }
