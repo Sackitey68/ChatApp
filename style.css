@@ -1,10 +1,8 @@
 :root {
-    --icon-background: linear-gradient(45deg, tomato, purple);
-    --chat-background-1: linear-gradient(45deg, #ee087f, #515bd4);
-    --chat-background-2: linear-gradient( royalblue, grey);
+  --icon-background: linear-gradient(45deg, tomato, purple);
+  --chat-background-1: linear-gradient(45deg, #ee087f, #515bd4);
+  --chat-background-2: linear-gradient(royalblue, grey);
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -20,7 +18,7 @@
   justify-content: center;
   gap: 10px;
   background-color: hwb(0 100% 20%);
-  padding: 20px;;
+  padding: 20px;
 }
 
 .chat-profile {
@@ -39,6 +37,39 @@
   background-color: #fff;
   height: 100vh;
   border-radius: 15px;
+}
+
+/* Responsiveness of page layout */
+@media screen and (max-width: 950px) {
+  .main-container {
+    grid-template-columns: 48% 48%;
+  }
+
+  .chat-box {
+    grid-column: 1 / -1;
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-container {
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    justify-content: unset;
+  }
+
+  chat-box {
+    grid-column: 1 / 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+    .main-container {
+        background-color: unset;
+    }
+
+    .chat-profile, .chat-online, .chat-box {
+        box-shadow: 3px 3px 10px grey;
+    }
 }
 
 /* Footer */
