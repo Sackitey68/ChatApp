@@ -23,22 +23,20 @@
 
 .chat-profile {
   background-color: #fff;
-  height: 100vh;
   border-radius: 15px;
 }
 
 .chat-online {
   background-color: #fff;
-  height: 100vh;
+  /* height: 100vh; */
   border-radius: 15px;
 }
 
 .chat-box {
   background-color: #fff;
-  height: 100vh;
+  /* height: 100vh; */
   border-radius: 15px;
 }
-
 
 /* Responsiveness of page layout */
 @media screen and (max-width: 950px) {
@@ -64,70 +62,107 @@
 }
 
 @media screen and (max-width: 450px) {
-    .main-container {
-        background-color: unset;
-    }
+  .main-container {
+    background-color: unset;
+  }
 
-    .chat-profile, .chat-online, .chat-box {
-        box-shadow: 3px 3px 10px grey;
-    }
+  .chat-profile,
+  .chat-online,
+  .chat-box {
+    box-shadow: 3px 3px 10px grey;
+  }
 }
 
 /* User profile */
 .user-profile {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-
 .user-img img {
-    inline-size: 150px;
-    block-size: 150px;
-    border-radius: 50%;
-    border: 5px solid darkgray;
-    object-fit: cover;
-    margin-bottom: 10px;
+  inline-size: 150px;
+  block-size: 150px;
+  border-radius: 50%;
+  border: 5px solid darkgray;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 .online {
-    position: relative;
+  position: relative;
 }
 
 .online::after {
-    content: "";
-    inline-size: 15px;
-    block-size: 15px;
-    background-color: limegreen;
-    position: absolute;
-    border-radius: 50%;
-    top: 0;
-    right: 25px;
-    border: 2px solid #fff;
+  content: "";
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: limegreen;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  right: 25px;
+  border: 2px solid #fff;
 }
 
-.name, .email, .option-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.name,
+.email,
+.option-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
-
 
 .option-icons i {
-    inline-size: 40px;
-    block-size: 40px;
-    background: var(--icon-background);
-    text-align: center;
-    color: white;
-    margin-right: 10px;
-    line-height: 40px;
-    border-radius: 50%;
+  inline-size: 40px;
+  block-size: 40px;
+  background: var(--icon-background);
+  text-align: center;
+  color: white;
+  margin-right: 10px;
+  line-height: 40px;
+  border-radius: 50%;
 }
 
 .option-icons {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 }
+
+/* Media */
+.media-files {
+  margin-inline: 50px;
+  border-top: 1px solid #ccc;
+}
+
+.media-files h4 {
+  margin-block: 20px;
+}
+
+.media-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-inline: 15px;
+}
+
+.media-files ul {
+  margin-bottom: 15px;
+}
+
+.media-img li {
+  list-style: none;
+  margin-bottom: 7px;
+  margin-right: 4px;
+}
+
+.media-img li img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 /* Footer */
 footer {
   background-color: white;
