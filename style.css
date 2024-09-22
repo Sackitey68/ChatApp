@@ -107,6 +107,27 @@
     border: 2px solid #fff;
 }
 
+.name, .email, .option-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.option-icons i {
+    inline-size: 40px;
+    block-size: 40px;
+    background: var(--icon-background);
+    text-align: center;
+    color: white;
+    margin-right: 10px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.option-icons {
+    padding-bottom: 25px;
+}
 /* Footer */
 footer {
   background-color: white;
