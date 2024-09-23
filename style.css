@@ -23,18 +23,19 @@
 
 .chat-profile {
   background-color: #fff;
+  min-height: 100vh;
   border-radius: 15px;
 }
 
 .chat-online {
   background-color: #fff;
-  /* height: 100vh; */
+  min-height: 100vh;
   border-radius: 15px;
 }
 
 .chat-box {
   background-color: #fff;
-  /* height: 100vh; */
+  min-height: 100vh;
   border-radius: 15px;
 }
 
@@ -114,6 +115,10 @@
   margin-top: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .option-icons i {
   inline-size: 40px;
   block-size: 40px;
@@ -137,13 +142,13 @@
 
 .media-files h4 {
   margin-block: 20px;
+  text-align: center;
 }
 
 .media-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-inline: 15px;
 }
 
 .media-files ul {
@@ -161,6 +166,39 @@
   height: 70px;
   border-radius: 10px;
   object-fit: cover;
+}
+
+/* Groups */
+.groups img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+ 
+.groups {
+  margin-inline: 50px;
+  border-top: 1px solid #ccc;
+}
+
+.groups p {
+  font-weight: 700;
+  text-align: center;
+  margin-block: 30px;
+}
+
+.groups a {
+margin-bottom: 20px;
+color: grey;
+display: flex;
+align-items: center;
+}
+
+.groups a:hover {
+  color: rebeccapurple;
+  font-weight: 600;
+
 }
 
 /* Footer */
